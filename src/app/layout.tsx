@@ -7,10 +7,13 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
+// export const dynamicParams = false; // true |
+
 export const metadata = {
   title: 'Listado de Pokemones',
   description: 'Pokemonoes generados'
 };
+//
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
