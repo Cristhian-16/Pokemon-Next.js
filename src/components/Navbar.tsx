@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Navbar = () => {
   return (
-    <header className='box-border bg-gray-900 flex justify-between items-center px-4 py-3'>
+    <header className='box-border bg-zinc-950 flex justify-between items-center px-4 py-3'>
       <Link href={'/'}>
         <Image
           src='/pokemon-logo.png'
@@ -14,9 +14,9 @@ export const Navbar = () => {
           priority={true}
         />
       </Link>
-      <div className='border-2 px-3 py-2 rounded-xl'>
-        <button>Favoritos</button>
-      </div>
+      <Link href={'/favorites'} className='border-2 px-3 py-2 rounded-xl'>
+        Favoritos
+      </Link>
     </header>
   );
 };
